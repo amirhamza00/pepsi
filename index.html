@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="banner" id="banner">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="bcontent">
+            <div class="text">
+                <h1>that's what <br> <span>i like</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Ut suscipit blanditiis a et placeat nostrum recusandae tempore fuga qui natus Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates numquam!</p>
+
+                <a href="" class="xyz">view all product</a>
+            </div>
+
+            <div class="image">
+                <img src="img/pepsi001.png" alt="" id="image-area">
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+            </div>
+
+            <div class="btn">
+                <ul>
+                    <li><img src="img/pepsi001.png" onclick="changeImage1();changeBg1()"></li>
+                    <li><img src="img/pepsi002.png" onclick="changeImage2();changeBg2();hover()"></li>
+                    <li><img src="img/pepsi003.png" onclick="changeImage3();background()"></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script>
+
+     var img = document.getElementById("image-area");
+
+     function changeImage1(){
+         img.src='pepsi1.png';
+     }
+     function changeImage2(){
+         img.src='pepsi2.png';
+     }
+     function changeImage3(){
+         img.src='pepsi3.png';
+     }
+
+
+
+     var bg = document.getElementById("banner");
+
+     function changeBg1(){
+         bg.style.background = '#0062be';
+     }
+
+     function changeBg2(){
+         bg.style.background = '#e60c2c';
+     }
+
+     function background(){
+         bg.style.background = '#1e1e1e';
+     }
+
+
+
+    </script>
+</body>
+</html>
